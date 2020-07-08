@@ -1,0 +1,5 @@
+*.tfstate
+*.backup
+*.swp
+.terraform
+index.html
