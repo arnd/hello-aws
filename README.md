@@ -22,7 +22,7 @@ Below you find instructions to re-deploy it from the [Git Repository](https://gi
 1. Visit the new Instances URL and check if the Content is delivered fine (check `terraform output`)
 1. Tear-down infrastructure `terraform destroy`
 1. Make a copy of the terraform created AMI (e.g. via `aws ec2 create-image --instance-id <REPLACE-WITH-INSTANCE-ID> --name $(date -I)-aws-hello`)
-1. Make AMI public (e.g. via aws ec2 modify-image-attribute --image-id ami-0db087fa93dde7690 --launch-permission "Add=[{Group=all}]")
+1. Make AMI public (e.g. via `aws ec2 modify-image-attribute --image-id ami-0db087fa93dde7690 --launch-permission "Add=[{Group=all}]"`)
 
 ### Terraform Dry-run
 
